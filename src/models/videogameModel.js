@@ -1,14 +1,15 @@
-/*VIDEOJUEGOS
+/*
+VIDEOJUEGOS
 ● title
 ● developer
 ● genre
-● images: {image, image_id}
+● images: [{image, image_id}]
 ● price
 ● rating
 ● cover
 ● cover_id
 ● available
-● platforms { }
+● platforms: [{name, console}]
 */
 
 import {Schema, model} from "mongoose"
@@ -30,9 +31,8 @@ const schema = new Schema({
     available: {type: Boolean},
     platforms: [
         {
-            material: {type: String},
-            x: {type: Number},
-            y: {type: Number}
+            name: {type: String},
+            console: {type: String}
         }
     ]
 })
