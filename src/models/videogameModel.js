@@ -27,7 +27,7 @@ const schema = new Schema({
     rating: {type: Number},
     cover: {type: String},
     cover_id: {type: String},
-    avaliable: {type: Boolean},
+    available: {type: Boolean},
     platforms: [
         {
             material: {type: String},

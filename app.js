@@ -6,6 +6,6 @@ app.disable("x-powered-by")
 
 app.use(express.json())
 
-app.use(videogameRouter)
+app.use("/api/videogames", videogameRouter)
 
 export default app
